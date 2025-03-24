@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load saved theme from localStorage
     if (localStorage.getItem("theme") === "dark") {
         html.classList.add("dark");
-        themeToggle.src = "assets/sun_icon.png";
+        themeToggle.src = "dist/sun_icon.png";
         themeToggle.classList.remove("invert"); // Make sun black in dark mode
     } else {
         html.classList.remove("dark");
-        themeToggle.src = "assets/moon.png";
+        themeToggle.src = "dist/moon.png";
         themeToggle.classList.add("invert"); // Make moon white in light mode
     }
 
     themeToggle.addEventListener("click", () => {
         html.classList.toggle("dark");
         if (html.classList.contains("dark")) {
-            themeToggle.src = "assets/sun_icon.png";
+            themeToggle.src = "dist/sun_icon.png";
             themeToggle.classList.remove("invert"); // Sun black in dark mode
             localStorage.setItem("theme", "dark");
         } else {
-            themeToggle.src = "assets/moon.png";
+            themeToggle.src = "dist/moon.png";
             themeToggle.classList.add("invert"); // Moon white in light mode
             localStorage.setItem("theme", "light");
         }
