@@ -1,33 +1,184 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <title>Venu S Raj</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+    <script src="matter1.js" defer></script>
   </head>
-  <body class="bg-[#111]">
-    <header class="flex items-center justify-between mx-4 mt-4">
-      <img
-        class="w-40 h-40 filter invert"
-        src="assets/logo.svg"
-        alt="VSR Venu S Raj Logo"
-      /><!-- TO make image glow use this brightness-0 drop-shadow-[0_0_10px_#00f] -->
-      <div class="flex items-center gap-5 px-3">
-        <!-- Moon icon (light mode) -->
+  <body
+    class="bg-[#04091a] font-bodoni dark:bg-[#F5F5F5] text-white dark:text-black"
+  >
+    <section
+      class="flex flex-col justify-between h-screen max-w-screen-2xl mx-auto"
+    >
+      <!-- Header -->
+      <header
+        class="flex z-10 items-center justify-between w-full px-6 mt-4 max-w-screen-2xl mx-auto pointer-events-none"
+      >
+        <!-- Logo -->
+        <a href="/">
+          <img
+            class="w-24 h-24 filter invert drop-shadow-[0_0_15px_#1E90FF] transition-all duration-300 dark:invert-0 pointer-events-auto"
+            src="assets/logo.svg"
+            alt="VSR Venu S Raj Logo"
+          />
+        </a>
+
+        <!-- Dark/Light Mode Toggle -->
         <img
-          class="w-11 h-11 filter invert dark:hidden transition-all duration-300 hover:drop-shadow-[0_0_10px_#00f] hover:w-14 hover:h-14"
+          id="theme-toggle"
+          class="w-10 h-10 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_#1E90FF] invert dark:invert-0 swap swap-rotate swap-on pointer-events-auto"
           src="assets/moon.png"
-          alt="Dark mode button"
+          alt="Theme Toggle"
         />
-        <!-- Sun icon (dark mode) -->
-        <img
-          class="w-7 h-7 filter invert dark:block hidden transition-all duration-300 hover:w-9 hover:h-9"
-          src="assets/sun_icon.png"
-          alt="light mode button"
-        />
+      </header>
+      <div class="absolute inset-0 block" id="wrapper-canvas"></div>
+
+      <!-- Main Content -->
+      <div
+        class="flex items-center relative -mt-32 justify-between md:-mt-10 px-4"
+      >
+        <div class="w-full px-4 max-w-screen-xl mx-auto">
+          <img
+            class="w-96 h-96 md:w-auto md:h-auto absolute top-0 md:-translate-x-1/2 md:-mt-10 -translate-y-8 md:-translate-y-1/3 md:left-1/2 opacity-5 md:opacity-15 bg-cover filter invert brightness-150 contrast-125 drop-shadow-[0_0_20px_#1E90FF] dark:invert-0 transition-all duration-300 pointer-events-none"
+            src="assets/finalLogo.png"
+            alt="Venu S Raj"
+          />
+          <div class="relative ml-10 md:-mt-60">
+            <h1
+              class="text-[60px] md:text-[84px] font-bodoni font-[700] not-italic pointer-events-none"
+            >
+              VENU SR
+            </h1>
+            <p
+              class="text-[20px] md:text-[24px] font-nunito italic md:ml-4 mt-3 mb-3 pointer-events-none"
+            >
+              Full Stack Developer
+            </p>
+            <a
+              href="#_"
+              class="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group md:ml-4"
+            >
+              <span
+                class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-10 dark:invert"
+              ></span>
+              <span
+                class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8 dark:invert"
+              ></span>
+              <span
+                class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 font-extrabold-800 dark:invert"
+              >
+                About me
+              </span>
+              <span
+                class="absolute inset-0 border-2 border-white dark:invert rounded-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <ul
+          class="gap-6 ml-auto space-y-6 text-[#b0b2c3] hover:text-white absolute right-8"
+        >
+          <li>
+            <a href="https://www.linkedin.com/in/srvenu/" target="_blank">
+              <img
+                src="assets/linkdin.png"
+                alt="LinkedIn"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/venu_s_raj/" target="_blank">
+              <img
+                src="assets/instagram.png"
+                alt="Instagram"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/srvenu" target="_blank">
+              <img
+                src="assets/github_733609.png"
+                alt="GitHub"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/Venuraj02" target="_blank">
+              <img
+                src="assets/X.png"
+                alt="X Twitter"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@CodeAlchemists" target="_blank">
+              <img
+                src="assets/youtube.png"
+                alt="YouTube"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+
+      <!-- Border animation -->
+
+      <!-- <div
+        class="relative w-[200px] h-[200px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow"
+      >
+        <div
+          class="absolute flex justify-center items-center top-[5px] bottom-[5px] right-[5px] left-[5px] rounded-[10px]"
+        >
+          <button
+            class="relative px-6 py-2 text-white font-semibold text-lg rounded-full bg-black border-2 border-transparent bg-clip-padding before:absolute before:inset-[-2px] before:bg-gradient-to-r from-blue-400 to-blue-600 before:rounded-full before:z-[-1] hover:scale-105 hover:shadow-[0_0_15px_#00a6ff] transition-all duration-300"
+          >
+            Hello
+          </button>
+        </div>
+      </div> -->
+
+      <!-- Button -->
+      <button
+        class="relative self-center inline-flex h-12 w-48 mb-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 dark:invert transition-all duration-300 ease-in-out hover:scale-105 hover: hover:shadow-lg"
+      >
+        <!-- Animated Border -->
+        <div
+          class="absolute -inset-[10px] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] hover:bg-slate-500"
+        ></div>
+
+        <!-- Button Content -->
+        <span
+          class="relative z-10 inline-flex h-full w-full items-center justify-center rounded-full bg-slate-950 dark:bg-black px-6 py-2 text-sm font-medium text-white"
+        >
+          Latest Works
+          <svg
+            class="size-6 text-violet-500"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </span>
+      </button>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
   </body>
 </html>
