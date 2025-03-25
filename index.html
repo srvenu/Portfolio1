@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="dist/logo.png" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <title>Venu S Raj</title>
     <link rel="stylesheet" href="output.css" />
     <script src="index.js" defer></script>
@@ -23,7 +23,7 @@
         <a href="/">
           <img
             class="w-24 h-24 filter invert drop-shadow-[0_0_15px_#1E90FF] transition-all duration-300 dark:invert-0 pointer-events-auto"
-            src="dist/logo.svg"
+            src="assets/logo.svg"
             alt="VSR Venu S Raj Logo"
           />
         </a>
@@ -32,7 +32,7 @@
         <img
           id="theme-toggle"
           class="w-10 h-10 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_#1E90FF] invert dark:invert-0 swap swap-rotate swap-on pointer-events-auto"
-          src="dist/moon.png"
+          src="./assets/moon.png"
           alt="Theme Toggle"
         />
       </header>
@@ -42,13 +42,13 @@
       <div
         class="flex items-center relative -mt-32 justify-between md:-mt-10 px-4"
       >
-        <div class="w-full px-4 max-w-screen-xl mx-auto">
+        <div class="w-full px-3 max-w-screen-xl mx-auto">
           <img
-            class="w-96 h-96 md:w-auto md:h-auto absolute top-0 md:-translate-x-1/2 md:-mt-10 -translate-y-8 md:-translate-y-1/3 md:left-1/2 opacity-5 md:opacity-15 bg-cover filter invert brightness-150 contrast-125 drop-shadow-[0_0_20px_#1E90FF] dark:invert-0 transition-all duration-300 pointer-events-none"
-            src="dist/finalLogo.png"
+            class="w-96 h-96 md:w-auto md:h-auto absolute top-0 -translate-x-1/2 -mt-10 -translate-y-8 md:-translate-y-1/3 left-1/2 opacity-15 bg-cover filter invert brightness-150 contrast-125 drop-shadow-[0_0_20px_#1E90FF] dark:invert-0 transition-all duration-300 pointer-events-none"
+            src="assets/finalLogo.png"
             alt="Venu S Raj"
           />
-          <div class="relative ml-10 md:-mt-60">
+          <div class="relative ml-2 md:-mt-60">
             <h1
               class="text-[60px] md:text-[84px] font-bodoni font-[700] not-italic pointer-events-none"
             >
@@ -59,25 +59,34 @@
             >
               Full Stack Developer
             </p>
-            <a
-              href="#_"
-              class="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group md:ml-4"
+            <div
+              id="aboutme-btn"
+              class="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-extrabold rounded-full group md:ml-4 pointer-events-auto"
             >
               <span
+                id="aboutme-btn"
                 class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-10 dark:invert"
               ></span>
               <span
+                id="aboutme-btn"
                 class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8 dark:invert"
               ></span>
               <span
-                class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 font-extrabold-800 dark:invert"
+                id="aboutme-btn"
+                class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 dark:invert"
               >
-                About me
+                <button
+                  id="aboutme-btn"
+                  class="pointer-events-auto"
+                  type="button"
+                >
+                  About me
+                </button>
               </span>
               <span
                 class="absolute inset-0 border-2 border-white dark:invert rounded-full"
               ></span>
-            </a>
+            </div>
           </div>
         </div>
 
@@ -88,7 +97,7 @@
           <li>
             <a href="https://www.linkedin.com/in/srvenu/" target="_blank">
               <img
-                src="dist/linkdin.png"
+                src="assets/linkdin.png"
                 alt="LinkedIn"
                 class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
               />
@@ -97,7 +106,7 @@
           <li>
             <a href="https://www.instagram.com/venu_s_raj/" target="_blank">
               <img
-                src="dist/instagram.png"
+                src="assets/instagram.png"
                 alt="Instagram"
                 class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
               />
@@ -106,7 +115,7 @@
           <li>
             <a href="https://github.com/srvenu" target="_blank">
               <img
-                src="dist/github_733609.png"
+                src="assets/github_733609.png"
                 alt="GitHub"
                 class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
               />
@@ -115,7 +124,7 @@
           <li>
             <a href="https://x.com/Venuraj02" target="_blank">
               <img
-                src="dist/X.png"
+                src="assets/X.png"
                 alt="X Twitter"
                 class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
               />
@@ -124,13 +133,92 @@
           <li>
             <a href="https://www.youtube.com/@CodeAlchemists" target="_blank">
               <img
-                src="dist/youtube.png"
+                src="assets/youtube.png"
                 alt="YouTube"
                 class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
               />
             </a>
           </li>
         </ul>
+      </div>
+      <!-- About me Popup -->
+      <div
+        id="about-me"
+        class="hidden fixed z-30 left-0 top-0 w-screen h-screen justify-center items-center"
+      >
+        <div
+          class="relative bg-white text-black rounded-3xl shadow-md p-8 w-[60%] md:w-[45%] md:h-[40%] h-[50%] flex flex-col md:flex-row dark:invert gap-6"
+        >
+          <!-- ✅ Close Button (Placed Inside) -->
+          <button
+            id="close-btn"
+            class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- ✅ Left Side (Text) -->
+          <div class="flex flex-col items-center md:items-start w-full">
+            <h1
+              class="text-lg md:text-3xl font-charmonman font-medium text-center md:text-left"
+            >
+              Hello, I'm
+            </h1>
+            <h1
+              class="text-3xl md:text-6xl font-montserrat font-semibold text-center md:text-left"
+            >
+              Venu Gopal SR
+            </h1>
+
+            <!-- ✅ Mobile Image -->
+            <img
+              class="w-44 h-44 md:w-56 md:h-52 rounded-full border-4 border-gray-300 dark:invert mt-4 md:hidden"
+              src="./assets/photo.jpeg"
+              alt="VSR image"
+            />
+
+            <p
+              class="text-sm md:text-lg font-mono mt-5 text-center md:text-left"
+            >
+              Web Dev & AI/ML Eng
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex justify-center md:justify-start gap-4 mt-6">
+              <button
+                id="downloadBtn"
+                class="bg-blue-500 text-white px-6 py-2 rounded-xl shadow-md hover:bg-blue-600 transition"
+              >
+                Download CV
+              </button>
+              <a href="mailto:srvenugopal2002@gmail.com">
+                <button
+                  class="bg-gray-500 text-white px-6 py-2 rounded-xl shadow-md hover:bg-gray-600 transition"
+                >
+                  Contact Me
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ Right Side (Larger Screens) -->
+          <div class="hidden md:flex items-start justify-start w-full">
+            <img
+              class="w-40 h-44 md:w-64 md:h-64 rounded-full border-4 border-gray-300 dark:invert"
+              src="./assets/photo.jpeg"
+              alt="VSR image"
+            />
+          </div>
+        </div>
       </div>
 
       <!-- Border animation -->
@@ -177,6 +265,7 @@
         </span>
       </button>
     </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
