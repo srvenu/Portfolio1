@@ -9,6 +9,7 @@
     <script src="index.js" defer></script>
     <script src="matter1.js" defer></script>
   </head>
+
   <body
     class="bg-[#04091a] font-bodoni dark:bg-[#F5F5F5] text-white dark:text-black"
   >
@@ -32,7 +33,7 @@
         <img
           id="theme-toggle"
           class="w-10 h-10 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_#1E90FF] invert dark:invert-0 swap swap-rotate swap-on pointer-events-auto"
-          src="./dist/moon.png"
+          src="dist/moon.png"
           alt="Theme Toggle"
         />
       </header>
@@ -182,7 +183,7 @@
             <!-- ✅ Mobile Image -->
             <img
               class="w-44 h-44 md:w-56 md:h-52 rounded-full border-4 border-gray-300 dark:invert mt-4 md:hidden"
-              src="./dist/photo.jpeg"
+              src="dist/photo.jpeg"
               alt="VSR image"
             />
 
@@ -214,7 +215,7 @@
           <div class="hidden md:flex items-start justify-start w-full">
             <img
               class="w-40 h-44 md:w-64 md:h-64 rounded-full border-4 border-gray-300 dark:invert"
-              src="./dist/photo.jpeg"
+              src="dist/photo.jpeg"
               alt="VSR image"
             />
           </div>
@@ -239,6 +240,7 @@
 
       <!-- Button -->
       <button
+        id="latestwork-btn"
         class="relative self-center inline-flex h-12 w-48 mb-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 dark:invert transition-all duration-300 ease-in-out hover:scale-105 hover: hover:shadow-lg"
       >
         <!-- Animated Border -->
@@ -264,6 +266,191 @@
           </svg>
         </span>
       </button>
+    </section>
+    <!-- Second Section Starts here -->
+    <section
+      id="target-section"
+      class="py-12 text-black font-bodoni bg-gray-100 dark:bg-gray-900 dark:text-white dark:invert"
+    >
+      <h2
+        class="text-4xl md:text-6xl text-[#7b00ff] font-serif font-bold text-center mb-4 md:mb-8 dark:text-indigo-700 dark:invert"
+      >
+        Recent Projects
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center ml-8 justify-center"
+      >
+        <!-- Card 1 (Left) -->
+        <div class="flex justify-start md:ml-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="dist/demo-2.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Youtube Video Summarizer.
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a
+                  href="https://github.com/srvenu/youtube_video_to_notes/blob/main/demo.gif"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/youtube_video_to_notes"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex m-8 font-mono font-light">
+          <p>
+            This project provides a Streamlit application that allows users to
+            summarize YouTube videos and extract important topics from their
+            transcripts.
+          </p>
+        </div>
+
+        <!-- Card 2 (Right) -->
+        <div>
+          <p class="text-right hidden md:flex m-8 font-mono font-light">
+            A responsive portfolio website built with Tailwind CSS, showcasing
+            projects, skills, and experience with a clean and modern design.
+          </p>
+        </div>
+        <div class="flex md:justify-end md:mr-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#ff007a)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[295px] h-[170px] rounded-[10px] dark:invert"
+                src="dist/portfolio.png"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Portfolio Using TailwindCss
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/Portfolio1/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/Portfolio1"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (Left) -->
+        <div class="flex md:justify-start md:ml-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00ff6a)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="dist/Game.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">Simon Game</p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/SimonGame/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/SimonGame"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex m-8 font-mono font-light">
+          <p>
+            The Simon Game is a classic memory game where players must repeat a
+            sequence of lights and sounds in the correct order. Each round adds
+            a new step to the sequence, increasing the difficulty. The game
+            tests and improves memory and concentration skills.
+          </p>
+        </div>
+
+        <!-- Card 4 (Right) -->
+        <div>
+          <p class="text-right hidden md:flex m-8 font-mono font-light">
+            A responsive and interactive portfolio website built using Tailwind
+            CSS, showcasing projects, skills, and achievements with a clean
+            design.
+          </p>
+        </div>
+        <div class="flex md:justify-end md:mr-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#ff6a00)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="dist/simpleWebPage.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Tailwind responsive Webpage Projects
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/SimpleWebsite/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/SimpleWebsite"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
