@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const aboutMeBtn = document.getElementById('aboutme-btn');
     const closeButton = document.getElementById('close-btn');
     const aboutMe = document.getElementById('about-me');
+    const latestWorks = document.getElementById('latestwork-btn')
 
     // Load saved theme from localStorage
     if (localStorage.getItem("theme") === "dark") {
@@ -35,13 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
         aboutMe.classList.add('flex'); // Apply flex layout
     });
 
+    latestWorks.addEventListener('click', () => {
+        document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });
+    });
+
     closeButton.addEventListener('click', () => {
         aboutMe.classList.remove('flex'); // Remove flex
         aboutMe.classList.add('hidden'); // Hide popup
     });
 
     document.getElementById('downloadBtn').addEventListener('click', () => {
-        const filePath = 'dist/Venu_Gopal_SR_Resume (updated_on_dec_2024).pdf';
+        const filePath = './dist/Venu_Gopal_SR_Resume (updated_on_dec_2024).pdf';
         const link = document.createElement('a');
         link.href = filePath;
         link.download = 'Venu_Gopal_SR_Resume.pdf'; // Clean download name
