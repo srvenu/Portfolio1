@@ -1,1670 +1,460 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Charmonman:wght@400;700&family=League+Spartan:wght@100..900&family=Rock+Salt&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Charmonman:wght@400;700&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rock+Salt&display=swap");
-
-*, ::before, ::after{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
-}
-
-::backdrop{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
-}
-
-/*
-! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
-*/
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  /* 1 */
-  border-width: 0;
-  /* 2 */
-  border-style: solid;
-  /* 2 */
-  border-color: #e5e7eb;
-  /* 2 */
-}
-
-::before,
-::after {
-  --tw-content: '';
-}
-
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
-
-html,
-:host {
-  line-height: 1.5;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
-  /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 4 */
-  font-feature-settings: normal;
-  /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
-}
-
-/*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-
-body {
-  margin: 0;
-  /* 1 */
-  line-height: inherit;
-  /* 2 */
-}
-
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
-hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  border-top-width: 1px;
-  /* 3 */
-}
-
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-/*
-Remove the default font size and weight for headings.
-*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
-  font-size: 1em;
-  /* 4 */
-}
-
-/*
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
-table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
-  border-collapse: collapse;
-  /* 3 */
-}
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  font-weight: inherit;
-  /* 1 */
-  line-height: inherit;
-  /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
-  color: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
-}
-
-/*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
-button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
-  -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
-}
-
-/*
-Use the modern Firefox focus style for all focusable elements.
-*/
-
-:-moz-focusring {
-  outline: auto;
-}
-
-/*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
-}
-
-/*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
-
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  padding: 0;
-}
-
-ol,
-ul,
-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
-}
-
-/*
-Prevent resizing textareas horizontally by default.
-*/
-
-textarea {
-  resize: vertical;
-}
-
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-/*
-Set the default cursor for buttons.
-*/
-
-button,
-[role="button"] {
-  cursor: pointer;
-}
-
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
-:disabled {
-  cursor: default;
-}
-
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
-}
-
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden]:where(:not([hidden="until-found"])) {
-  display: none;
-}
-
-.pointer-events-none{
-  pointer-events: none;
-}
-
-.pointer-events-auto{
-  pointer-events: auto;
-}
-
-.fixed{
-  position: fixed;
-}
-
-.absolute{
-  position: absolute;
-}
-
-.relative{
-  position: relative;
-}
-
-.-inset-\[10px\]{
-  inset: -10px;
-}
-
-.inset-0{
-  inset: 0px;
-}
-
-.inset-1{
-  inset: 0.25rem;
-}
-
-.bottom-\[5px\]{
-  bottom: 5px;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.left-1\/2{
-  left: 50%;
-}
-
-.left-\[5px\]{
-  left: 5px;
-}
-
-.right-2{
-  right: 0.5rem;
-}
-
-.right-8{
-  right: 2rem;
-}
-
-.right-\[5px\]{
-  right: 5px;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-2{
-  top: 0.5rem;
-}
-
-.top-\[5px\]{
-  top: 5px;
-}
-
-.z-10{
-  z-index: 10;
-}
-
-.z-30{
-  z-index: 30;
-}
-
-.m-8{
-  margin: 2rem;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.-mt-1{
-  margin-top: -0.25rem;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
-}
-
-.-mt-32{
-  margin-top: -8rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
-}
-
-.ml-auto{
-  margin-left: auto;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.block{
-  display: block;
-}
-
-.flex{
-  display: flex;
-}
-
-.inline-flex{
-  display: inline-flex;
-}
-
-.grid{
-  display: grid;
-}
-
-.hidden{
-  display: none;
-}
-
-.size-6{
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-12{
-  height: 3rem;
-}
-
-.h-24{
-  height: 6rem;
-}
-
-.h-32{
-  height: 8rem;
-}
-
-.h-44{
-  height: 11rem;
-}
-
-.h-48{
-  height: 12rem;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-96{
-  height: 24rem;
-}
-
-.h-\[170px\]{
-  height: 170px;
-}
-
-.h-\[180px\]{
-  height: 180px;
-}
-
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-\[280px\]{
-  height: 280px;
-}
-
-.h-\[50\%\]{
-  height: 50%;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-24{
-  width: 6rem;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-40{
-  width: 10rem;
-}
-
-.w-44{
-  width: 11rem;
-}
-
-.w-48{
-  width: 12rem;
-}
-
-.w-8{
-  width: 2rem;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-\[200px\]{
-  width: 200px;
-}
-
-.w-\[295px\]{
-  width: 295px;
-}
-
-.w-\[319px\]{
-  width: 319px;
-}
-
-.w-\[320px\]{
-  width: 320px;
-}
-
-.w-\[60\%\]{
-  width: 60%;
-}
-
-.w-full{
-  width: 100%;
-}
-
-.w-screen{
-  width: 100vw;
-}
-
-.max-w-screen-2xl{
-  max-width: 1536px;
-}
-
-.max-w-screen-xl{
-  max-width: 1280px;
-}
-
-.-translate-x-1\/2{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-56{
-  --tw-translate-x: -14rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-2{
-  --tw-translate-y: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-24{
-  --tw-translate-y: -6rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-8{
-  --tw-translate-y: -2rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-12{
-  --tw-translate-x: 3rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-45{
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin{
-  animation: spin 4s linear infinite;
-}
-
-.cursor-pointer{
-  cursor: pointer;
-}
-
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-col{
-  flex-direction: column;
-}
-
-.items-start{
-  align-items: flex-start;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-start{
-  justify-content: flex-start;
-}
-
-.justify-center{
-  justify-content: center;
-}
-
-.justify-between{
-  justify-content: space-between;
-}
-
-.gap-4{
-  gap: 1rem;
-}
-
-.gap-6{
-  gap: 1.5rem;
-}
-
-.space-y-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.self-center{
-  align-self: center;
-}
-
-.overflow-hidden{
-  overflow: hidden;
-}
-
-.rounded-3xl{
-  border-radius: 1.5rem;
-}
-
-.rounded-\[10px\]{
-  border-radius: 10px;
-}
-
-.rounded-full{
-  border-radius: 9999px;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
-.border-2{
-  border-width: 2px;
-}
-
-.border-4{
-  border-width: 4px;
-}
-
-.border-gray-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
-}
-
-.border-transparent{
-  border-color: transparent;
-}
-
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.bg-\[\#04091a\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 9 26 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-950{
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[conic-gradient\(from_90deg_at_50\%_50\%\2c \#E2CBFF_0\%\2c \#393BB2_50\%\2c \#E2CBFF_100\%\)\]{
-  background-image: conic-gradient(from 90deg at 50% 50%,#E2CBFF 0%,#393BB2 50%,#E2CBFF 100%);
-}
-
-.from-blue-400{
-  --tw-gradient-from: #60a5fa var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(96 165 250 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-blue-600{
-  --tw-gradient-to: #2563eb var(--tw-gradient-to-position);
-}
-
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-clip-padding{
-  background-clip: padding-box;
-}
-
-.p-2{
-  padding: 0.5rem;
-}
-
-.p-8{
-  padding: 2rem;
-}
-
-.p-\[1px\]{
-  padding: 1px;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.text-left{
-  text-align: left;
-}
-
-.text-center{
-  text-align: center;
-}
-
-.text-right{
-  text-align: right;
-}
-
-.font-bodoni{
-  font-family: "Bodoni Moda SC", serif;
-}
-
-.font-charmonman{
-  font-family: "Charmonman", cursive;
-}
-
-.font-mono{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-montserrat{
-  font-family: Montserrat, sans-serif;
-}
-
-.font-nunito{
-  font-family: "Nunito", sans-serif;
-}
-
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[20px\]{
-  font-size: 20px;
-}
-
-.text-\[60px\]{
-  font-size: 60px;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.font-\[700\]{
-  font-weight: 700;
-}
-
-.font-bold{
-  font-weight: 700;
-}
-
-.font-extrabold{
-  font-weight: 800;
-}
-
-.font-light{
-  font-weight: 300;
-}
-
-.font-medium{
-  font-weight: 500;
-}
-
-.font-semibold{
-  font-weight: 600;
-}
-
-.italic{
-  font-style: italic;
-}
-
-.not-italic{
-  font-style: normal;
-}
-
-.text-\[\#7b00ff\]{
-  --tw-text-opacity: 1;
-  color: rgb(123 0 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#b0b2c3\]{
-  --tw-text-opacity: 1;
-  color: rgb(176 178 195 / var(--tw-text-opacity, 1));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
-}
-
-.text-violet-500{
-  --tw-text-opacity: 1;
-  color: rgb(139 92 246 / var(--tw-text-opacity, 1));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.opacity-10{
-  opacity: 0.1;
-}
-
-.opacity-100{
-  opacity: 1;
-}
-
-.opacity-15{
-  opacity: 0.15;
-}
-
-.shadow-\[16px_16px_20px_\#0000008c\]{
-  --tw-shadow: 16px 16px 20px #0000008c;
-  --tw-shadow-colored: 16px 16px 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.brightness-150{
-  --tw-brightness: brightness(1.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.contrast-125{
-  --tw-contrast: contrast(1.25);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-\[0_0_15px_\#1E90FF\]{
-  --tw-drop-shadow: drop-shadow(0 0 15px #1E90FF);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-\[0_0_20px_\#1E90FF\]{
-  --tw-drop-shadow: drop-shadow(0 0 20px #1E90FF);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.invert{
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter{
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-200{
-  transition-duration: 200ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
-}
-
-.ease-in-out{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
-.before\:absolute::before{
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:inset-\[-2px\]::before{
-  content: var(--tw-content);
-  inset: -2px;
-}
-
-.before\:bottom-\[-50\%\]::before{
-  content: var(--tw-content);
-  bottom: -50%;
-}
-
-.before\:left-\[-50\%\]::before{
-  content: var(--tw-content);
-  left: -50%;
-}
-
-.before\:right-\[-50\%\]::before{
-  content: var(--tw-content);
-  right: -50%;
-}
-
-.before\:top-\[-50\%\]::before{
-  content: var(--tw-content);
-  top: -50%;
-}
-
-.before\:z-\[-1\]::before{
-  content: var(--tw-content);
-  z-index: -1;
-}
-
-@keyframes spin{
-  to{
-    content: var(--tw-content);
-    transform: rotate(360deg);
-  }
-}
-
-.before\:animate-spin-slow::before{
-  content: var(--tw-content);
-  animation: spin 3s linear infinite;
-}
-
-.before\:rounded-full::before{
-  content: var(--tw-content);
-  border-radius: 9999px;
-}
-
-.before\:bg-\[conic-gradient\(transparent\2c transparent\2c \#00a6ff\)\]::before{
-  content: var(--tw-content);
-  background-image: conic-gradient(transparent,transparent,#00a6ff);
-}
-
-.before\:bg-\[conic-gradient\(transparent\2c transparent\2c \#00ff6a\)\]::before{
-  content: var(--tw-content);
-  background-image: conic-gradient(transparent,transparent,#00ff6a);
-}
-
-.before\:bg-\[conic-gradient\(transparent\2c transparent\2c \#ff007a\)\]::before{
-  content: var(--tw-content);
-  background-image: conic-gradient(transparent,transparent,#ff007a);
-}
-
-.before\:bg-\[conic-gradient\(transparent\2c transparent\2c \#ff6a00\)\]::before{
-  content: var(--tw-content);
-  background-image: conic-gradient(transparent,transparent,#ff6a00);
-}
-
-.before\:bg-gradient-to-r::before{
-  content: var(--tw-content);
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.before\:content-\[\'\'\]::before{
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.hover\:scale-105:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-125:hover{
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-gray-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-gray-400:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-gray-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-slate-500:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:shadow-\[0_0_15px_\#00a6ff\]:hover{
-  --tw-shadow: 0 0 15px #00a6ff;
-  --tw-shadow-colored: 0 0 15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-lg:hover{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:drop-shadow-\[0_0_10px_\#1E90FF\]:hover{
-  --tw-drop-shadow: drop-shadow(0 0 10px #1E90FF);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.focus\:outline-none:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:ring-2:focus{
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.focus\:ring-slate-400:focus{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(148 163 184 / var(--tw-ring-opacity, 1));
-}
-
-.focus\:ring-offset-2:focus{
-  --tw-ring-offset-width: 2px;
-}
-
-.focus\:ring-offset-slate-50:focus{
-  --tw-ring-offset-color: #f8fafc;
-}
-
-.group:hover .group-hover\:-translate-x-8{
-  --tw-translate-x: -2rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:text-gray-900{
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
-}
-
-.dark\:bg-\[\#F5F5F5\]:is(.dark *){
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-black:is(.dark *){
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-gray-900:is(.dark *){
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:text-black:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-indigo-700:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(67 56 202 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-white:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.dark\:invert:is(.dark *){
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.dark\:invert-0:is(.dark *){
-  --tw-invert: invert(0);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-@media (min-width: 768px){
-  .md\:-mt-10{
-    margin-top: -2.5rem;
-  }
-
-  .md\:-mt-60{
-    margin-top: -15rem;
-  }
-
-  .md\:mb-8{
-    margin-bottom: 2rem;
-  }
-
-  .md\:ml-4{
-    margin-left: 1rem;
-  }
-
-  .md\:ml-44{
-    margin-left: 11rem;
-  }
-
-  .md\:mr-44{
-    margin-right: 11rem;
-  }
-
-  .md\:flex{
-    display: flex;
-  }
-
-  .md\:hidden{
-    display: none;
-  }
-
-  .md\:h-52{
-    height: 13rem;
-  }
-
-  .md\:h-64{
-    height: 16rem;
-  }
-
-  .md\:h-\[40\%\]{
-    height: 40%;
-  }
-
-  .md\:h-auto{
-    height: auto;
-  }
-
-  .md\:w-56{
-    width: 14rem;
-  }
-
-  .md\:w-64{
-    width: 16rem;
-  }
-
-  .md\:w-\[45\%\]{
-    width: 45%;
-  }
-
-  .md\:w-auto{
-    width: auto;
-  }
-
-  .md\:-translate-y-1\/3{
-    --tw-translate-y: -33.333333%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
-  .md\:items-start{
-    align-items: flex-start;
-  }
-
-  .md\:justify-start{
-    justify-content: flex-start;
-  }
-
-  .md\:justify-end{
-    justify-content: flex-end;
-  }
-
-  .md\:text-left{
-    text-align: left;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-\[24px\]{
-    font-size: 24px;
-  }
-
-  .md\:text-\[84px\]{
-    font-size: 84px;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="dist/logo.png" />
+    <title>Venu S Raj</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+    <script src="matter1.js" defer></script>
+  </head>
+
+  <body
+    class="bg-[#04091a] font-bodoni dark:bg-[#F5F5F5] text-white dark:text-black"
+  >
+    <section
+      class="flex flex-col justify-between h-screen max-w-screen-2xl mx-auto"
+    >
+      <!-- Header -->
+      <header
+        class="flex z-10 items-center justify-between w-full px-6 mt-4 max-w-screen-2xl mx-auto pointer-events-none"
+      >
+        <!-- Logo -->
+        <a href="/">
+          <img
+            class="w-24 h-24 filter invert drop-shadow-[0_0_15px_#1E90FF] transition-all duration-300 dark:invert-0 pointer-events-auto"
+            src="dist/logo.svg"
+            alt="VSR Venu S Raj Logo"
+          />
+        </a>
+
+        <!-- Dark/Light Mode Toggle -->
+        <img
+          id="theme-toggle"
+          class="w-10 h-10 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_#1E90FF] invert dark:invert-0 swap swap-rotate swap-on pointer-events-auto"
+          src="./dist/moon.png"
+          alt="Theme Toggle"
+        />
+      </header>
+      <div class="absolute inset-0 block" id="wrapper-canvas"></div>
+
+      <!-- Main Content -->
+      <div
+        class="flex items-center relative -mt-32 justify-between md:-mt-10 px-4"
+      >
+        <div class="w-full px-3 max-w-screen-xl mx-auto">
+          <img
+            class="w-96 h-96 md:w-auto md:h-auto absolute top-0 -translate-x-1/2 -mt-10 -translate-y-8 md:-translate-y-1/3 left-1/2 opacity-15 bg-cover filter invert brightness-150 contrast-125 drop-shadow-[0_0_20px_#1E90FF] dark:invert-0 transition-all duration-300 pointer-events-none"
+            src="dist/finalLogo.png"
+            alt="Venu S Raj"
+          />
+          <div class="relative ml-2 md:-mt-60">
+            <h1
+              class="text-[60px] md:text-[84px] font-bodoni font-[700] not-italic pointer-events-none"
+            >
+              VENU SR
+            </h1>
+            <p
+              class="text-[20px] md:text-[24px] font-nunito italic md:ml-4 mt-3 mb-3 pointer-events-none"
+            >
+              Full Stack Developer
+            </p>
+            <div
+              id="aboutme-btn"
+              class="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-extrabold rounded-full group md:ml-4 pointer-events-auto"
+            >
+              <span
+                id="aboutme-btn"
+                class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-10 dark:invert"
+              ></span>
+              <span
+                id="aboutme-btn"
+                class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8 dark:invert"
+              ></span>
+              <span
+                id="aboutme-btn"
+                class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 dark:invert"
+              >
+                <button
+                  id="aboutme-btn"
+                  class="pointer-events-auto"
+                  type="button"
+                >
+                  About me
+                </button>
+              </span>
+              <span
+                class="absolute inset-0 border-2 border-white dark:invert rounded-full"
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <ul
+          class="gap-6 ml-auto space-y-6 text-[#b0b2c3] hover:text-white absolute right-8"
+        >
+          <li>
+            <a href="https://www.linkedin.com/in/srvenu/" target="_blank">
+              <img
+                src="dist/linkdin.png"
+                alt="LinkedIn"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/venu_s_raj/" target="_blank">
+              <img
+                src="dist/instagram.png"
+                alt="Instagram"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/srvenu" target="_blank">
+              <img
+                src="dist/github_733609.png"
+                alt="GitHub"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/Venuraj02" target="_blank">
+              <img
+                src="dist/X.png"
+                alt="X Twitter"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@CodeAlchemists" target="_blank">
+              <img
+                src="dist/youtube.png"
+                alt="YouTube"
+                class="w-8 h-8 filter invert transition-all duration-300 cursor-pointer hover:scale-125 text-[#b0b2c3] hover:text-white dark:invert-0"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- About me Popup -->
+      <div
+        id="about-me"
+        class="hidden fixed z-30 left-0 top-0 w-screen h-screen justify-center items-center"
+      >
+        <div
+          class="relative bg-white text-black rounded-3xl shadow-md p-8 w-[60%] md:w-[45%] md:h-[40%] h-[50%] flex flex-col md:flex-row dark:invert gap-6"
+        >
+          <!-- ✅ Close Button (Placed Inside) -->
+          <button
+            id="close-btn"
+            class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- ✅ Left Side (Text) -->
+          <div class="flex flex-col items-center md:items-start w-full">
+            <h1
+              class="text-lg md:text-3xl font-charmonman font-medium text-center md:text-left"
+            >
+              Hello, I'm
+            </h1>
+            <h1
+              class="text-3xl md:text-6xl font-montserrat font-semibold text-center md:text-left"
+            >
+              Venu Gopal SR
+            </h1>
+
+            <!-- ✅ Mobile Image -->
+            <img
+              class="w-44 h-44 md:w-56 md:h-52 rounded-full border-4 border-gray-300 dark:invert mt-4 md:hidden"
+              src="./dist/photo.jpeg"
+              alt="VSR image"
+            />
+
+            <p
+              class="text-sm md:text-lg font-mono mt-5 text-center md:text-left"
+            >
+              Web Dev & AI/ML Eng
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex justify-center md:justify-start gap-4 mt-6">
+              <button
+                id="downloadBtn"
+                class="bg-blue-500 text-white px-6 py-2 rounded-xl shadow-md hover:bg-blue-600 transition"
+              >
+                Download CV
+              </button>
+              <a href="mailto:srvenugopal2002@gmail.com">
+                <button
+                  class="bg-gray-500 text-white px-6 py-2 rounded-xl shadow-md hover:bg-gray-600 transition"
+                >
+                  Contact Me
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ Right Side (Larger Screens) -->
+          <div class="hidden md:flex items-start justify-start w-full">
+            <img
+              class="w-40 h-44 md:w-64 md:h-64 rounded-full border-4 border-gray-300 dark:invert"
+              src="./dist/photo.jpeg"
+              alt="VSR image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Border animation -->
+
+      <!-- <div
+        class="relative w-[200px] h-[200px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow"
+      >
+        <div
+          class="absolute flex justify-center items-center top-[5px] bottom-[5px] right-[5px] left-[5px] rounded-[10px]"
+        >
+          <button
+            class="relative px-6 py-2 text-white font-semibold text-lg rounded-full bg-black border-2 border-transparent bg-clip-padding before:absolute before:inset-[-2px] before:bg-gradient-to-r from-blue-400 to-blue-600 before:rounded-full before:z-[-1] hover:scale-105 hover:shadow-[0_0_15px_#00a6ff] transition-all duration-300"
+          >
+            Hello
+          </button>
+        </div>
+      </div> -->
+
+      <!-- Button -->
+      <button
+        id="latestwork-btn"
+        class="relative self-center inline-flex h-12 w-48 mb-20 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 dark:invert transition-all duration-300 ease-in-out hover:scale-105 hover: hover:shadow-lg"
+      >
+        <!-- Animated Border -->
+        <div
+          class="absolute -inset-[10px] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] hover:bg-slate-500"
+        ></div>
+
+        <!-- Button Content -->
+        <span
+          class="relative z-10 inline-flex h-full w-full items-center justify-center rounded-full bg-slate-950 dark:bg-black px-6 py-2 text-sm font-medium text-white"
+        >
+          Latest Works
+          <svg
+            class="size-6 text-violet-500"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </span>
+      </button>
+    </section>
+    <!-- Second Section Starts here -->
+    <section
+      id="target-section"
+      class="py-12 text-black font-bodoni bg-gray-100 dark:bg-gray-900 dark:text-white dark:invert"
+    >
+      <h2
+        class="text-4xl md:text-6xl text-[#7b00ff] font-serif font-bold text-center mb-4 md:mb-8 dark:text-indigo-700 dark:invert"
+      >
+        Recent Projects
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center ml-8 justify-center"
+      >
+        <!-- Card 1 (Left) -->
+        <div class="flex justify-start md:ml-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="./dist/demo-2.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Youtube Video Summarizer.
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a
+                  href="https://github.com/srvenu/youtube_video_to_notes/blob/main/demo.gif"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/youtube_video_to_notes"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex m-8 font-mono font-light">
+          <p>
+            This project provides a Streamlit application that allows users to
+            summarize YouTube videos and extract important topics from their
+            transcripts.
+          </p>
+        </div>
+
+        <!-- Card 2 (Right) -->
+        <div>
+          <p class="text-right hidden md:flex m-8 font-mono font-light">
+            A responsive portfolio website built with Tailwind CSS, showcasing
+            projects, skills, and experience with a clean and modern design.
+          </p>
+        </div>
+        <div class="flex md:justify-end md:mr-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#ff007a)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[295px] h-[170px] rounded-[10px] dark:invert"
+                src="./dist/portfolio.png"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Portfolio Using TailwindCss
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/SimpleWebsite/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/Portfolio1"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (Left) -->
+        <div class="flex md:justify-start md:ml-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#00ff6a)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="./dist/Game.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">Simon Game</p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/SimonGame/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/SimonGame"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex m-8 font-mono font-light">
+          <p>
+            The Simon Game is a classic memory game where players must repeat a
+            sequence of lights and sounds in the correct order. Each round adds
+            a new step to the sequence, increasing the difficulty. The game
+            tests and improves memory and concentration skills.
+          </p>
+        </div>
+
+        <!-- Card 4 (Right) -->
+        <div>
+          <p class="text-right hidden md:flex m-8 font-mono font-light">
+            A responsive and interactive portfolio website built using Tailwind
+            CSS, showcasing projects, skills, and achievements with a clean
+            design.
+          </p>
+        </div>
+        <div class="flex md:justify-end md:mr-44">
+          <div
+            class="relative w-[320px] h-[280px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:content-[''] before:bg-[conic-gradient(transparent,transparent,#ff6a00)] before:animate-spin-slow"
+          >
+            <div
+              class="absolute flex flex-col justify-between items-center inset-1 rounded-[10px] p-2 bg-white"
+            >
+              <img
+                class="w-[319px] h-[180px] rounded-[10px] dark:invert"
+                src="./dist/simpleWebPage.gif"
+                alt="Project on ML model"
+              />
+              <p class="text-center text-sm mt-2 dark:invert">
+                Tailwind responsive Webpage Projects
+              </p>
+              <div class="flex gap-4 mt-2">
+                <a href="https://srvenu.github.io/SimpleWebsite/"
+                  ><button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    View Project
+                  </button></a
+                >
+                <a href="https://github.com/srvenu/SimpleWebsite"
+                  ><button
+                    class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition"
+                  >
+                    Get code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  </body>
+</html>
